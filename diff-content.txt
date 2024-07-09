@@ -1,0 +1,1856 @@
+diff --git a/package-lock.json b/package-lock.json
+index c56ebb0..b868c96 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -9,6 +9,7 @@
+       "version": "1.0.0",
+       "dependencies": {
+         "@hookform/resolvers": "^3.3.4",
++        "@radix-ui/react-dropdown-menu": "^2.0.6",
+         "@radix-ui/react-toast": "^1.1.5",
+         "@radix-ui/react-tooltip": "^1.0.7",
+         "@tanstack/react-query": "^5.28.8",
+@@ -1677,6 +1678,23 @@
+         }
+       }
+     },
++    "node_modules/@radix-ui/react-direction": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/@radix-ui/react-direction/-/react-direction-1.0.1.tgz",
++      "integrity": "sha512-RXcvnXgyvYvBEOhCBuddKecVkoMiI10Jcm5cTI7abJRAHYfFxeu+FBQs/DvdxSYucxR5mna0dNsL6QFlds5TMA==",
++      "dependencies": {
++        "@babel/runtime": "^7.13.10"
++      },
++      "peerDependencies": {
++        "@types/react": "*",
++        "react": "^16.8 || ^17.0 || ^18.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/@radix-ui/react-dismissable-layer": {
+       "version": "1.0.5",
+       "resolved": "https://registry.npmjs.org/@radix-ui/react-dismissable-layer/-/react-dismissable-layer-1.0.5.tgz",
+@@ -1704,6 +1722,77 @@
+         }
+       }
+     },
++    "node_modules/@radix-ui/react-dropdown-menu": {
++      "version": "2.0.6",
++      "resolved": "https://registry.npmjs.org/@radix-ui/react-dropdown-menu/-/react-dropdown-menu-2.0.6.tgz",
++      "integrity": "sha512-i6TuFOoWmLWq+M/eCLGd/bQ2HfAX1RJgvrBQ6AQLmzfvsLdefxbWu8G9zczcPFfcSPehz9GcpF6K9QYreFV8hA==",
++      "dependencies": {
++        "@babel/runtime": "^7.13.10",
++        "@radix-ui/primitive": "1.0.1",
++        "@radix-ui/react-compose-refs": "1.0.1",
++        "@radix-ui/react-context": "1.0.1",
++        "@radix-ui/react-id": "1.0.1",
++        "@radix-ui/react-menu": "2.0.6",
++        "@radix-ui/react-primitive": "1.0.3",
++        "@radix-ui/react-use-controllable-state": "1.0.1"
++      },
++      "peerDependencies": {
++        "@types/react": "*",
++        "@types/react-dom": "*",
++        "react": "^16.8 || ^17.0 || ^18.0",
++        "react-dom": "^16.8 || ^17.0 || ^18.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        },
++        "@types/react-dom": {
++          "optional": true
++        }
++      }
++    },
++    "node_modules/@radix-ui/react-focus-guards": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/@radix-ui/react-focus-guards/-/react-focus-guards-1.0.1.tgz",
++      "integrity": "sha512-Rect2dWbQ8waGzhMavsIbmSVCgYxkXLxxR3ZvCX79JOglzdEy4JXMb98lq4hPxUbLr77nP0UOGf4rcMU+s1pUA==",
++      "dependencies": {
++        "@babel/runtime": "^7.13.10"
++      },
++      "peerDependencies": {
++        "@types/react": "*",
++        "react": "^16.8 || ^17.0 || ^18.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        }
++      }
++    },
++    "node_modules/@radix-ui/react-focus-scope": {
++      "version": "1.0.4",
++      "resolved": "https://registry.npmjs.org/@radix-ui/react-focus-scope/-/react-focus-scope-1.0.4.tgz",
++      "integrity": "sha512-sL04Mgvf+FmyvZeYfNu1EPAaaxD+aw7cYeIB9L9Fvq8+urhltTRaEo5ysKOpHuKPclsZcSUMKlN05x4u+CINpA==",
++      "dependencies": {
++        "@babel/runtime": "^7.13.10",
++        "@radix-ui/react-compose-refs": "1.0.1",
++        "@radix-ui/react-primitive": "1.0.3",
++        "@radix-ui/react-use-callback-ref": "1.0.1"
++      },
++      "peerDependencies": {
++        "@types/react": "*",
++        "@types/react-dom": "*",
++        "react": "^16.8 || ^17.0 || ^18.0",
++        "react-dom": "^16.8 || ^17.0 || ^18.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        },
++        "@types/react-dom": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/@radix-ui/react-id": {
+       "version": "1.0.1",
+       "resolved": "https://registry.npmjs.org/@radix-ui/react-id/-/react-id-1.0.1.tgz",
+@@ -1722,6 +1811,46 @@
+         }
+       }
+     },
++    "node_modules/@radix-ui/react-menu": {
++      "version": "2.0.6",
++      "resolved": "https://registry.npmjs.org/@radix-ui/react-menu/-/react-menu-2.0.6.tgz",
++      "integrity": "sha512-BVkFLS+bUC8HcImkRKPSiVumA1VPOOEC5WBMiT+QAVsPzW1FJzI9KnqgGxVDPBcql5xXrHkD3JOVoXWEXD8SYA==",
++      "dependencies": {
++        "@babel/runtime": "^7.13.10",
++        "@radix-ui/primitive": "1.0.1",
++        "@radix-ui/react-collection": "1.0.3",
++        "@radix-ui/react-compose-refs": "1.0.1",
++        "@radix-ui/react-context": "1.0.1",
++        "@radix-ui/react-direction": "1.0.1",
++        "@radix-ui/react-dismissable-layer": "1.0.5",
++        "@radix-ui/react-focus-guards": "1.0.1",
++        "@radix-ui/react-focus-scope": "1.0.4",
++        "@radix-ui/react-id": "1.0.1",
++        "@radix-ui/react-popper": "1.1.3",
++        "@radix-ui/react-portal": "1.0.4",
++        "@radix-ui/react-presence": "1.0.1",
++        "@radix-ui/react-primitive": "1.0.3",
++        "@radix-ui/react-roving-focus": "1.0.4",
++        "@radix-ui/react-slot": "1.0.2",
++        "@radix-ui/react-use-callback-ref": "1.0.1",
++        "aria-hidden": "^1.1.1",
++        "react-remove-scroll": "2.5.5"
++      },
++      "peerDependencies": {
++        "@types/react": "*",
++        "@types/react-dom": "*",
++        "react": "^16.8 || ^17.0 || ^18.0",
++        "react-dom": "^16.8 || ^17.0 || ^18.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        },
++        "@types/react-dom": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/@radix-ui/react-popper": {
+       "version": "1.1.3",
+       "resolved": "https://registry.npmjs.org/@radix-ui/react-popper/-/react-popper-1.1.3.tgz",
+@@ -1824,6 +1953,37 @@
+         }
+       }
+     },
++    "node_modules/@radix-ui/react-roving-focus": {
++      "version": "1.0.4",
++      "resolved": "https://registry.npmjs.org/@radix-ui/react-roving-focus/-/react-roving-focus-1.0.4.tgz",
++      "integrity": "sha512-2mUg5Mgcu001VkGy+FfzZyzbmuUWzgWkj3rvv4yu+mLw03+mTzbxZHvfcGyFp2b8EkQeMkpRQ5FiA2Vr2O6TeQ==",
++      "dependencies": {
++        "@babel/runtime": "^7.13.10",
++        "@radix-ui/primitive": "1.0.1",
++        "@radix-ui/react-collection": "1.0.3",
++        "@radix-ui/react-compose-refs": "1.0.1",
++        "@radix-ui/react-context": "1.0.1",
++        "@radix-ui/react-direction": "1.0.1",
++        "@radix-ui/react-id": "1.0.1",
++        "@radix-ui/react-primitive": "1.0.3",
++        "@radix-ui/react-use-callback-ref": "1.0.1",
++        "@radix-ui/react-use-controllable-state": "1.0.1"
++      },
++      "peerDependencies": {
++        "@types/react": "*",
++        "@types/react-dom": "*",
++        "react": "^16.8 || ^17.0 || ^18.0",
++        "react-dom": "^16.8 || ^17.0 || ^18.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        },
++        "@types/react-dom": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/@radix-ui/react-slot": {
+       "version": "1.0.2",
+       "resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.0.2.tgz",
+@@ -3196,6 +3356,17 @@
+       "integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==",
+       "dev": true
+     },
++    "node_modules/aria-hidden": {
++      "version": "1.2.4",
++      "resolved": "https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.4.tgz",
++      "integrity": "sha512-y+CcFFwelSXpLZk/7fMB2mUbGtX9lKycf1MWJ7CaTIERyitVlyQx6C+sxcROU2BAJ24OiZyK+8wj2i8AlBoS3A==",
++      "dependencies": {
++        "tslib": "^2.0.0"
++      },
++      "engines": {
++        "node": ">=10"
++      }
++    },
+     "node_modules/array-buffer-byte-length": {
+       "version": "1.0.1",
+       "resolved": "https://registry.npmjs.org/array-buffer-byte-length/-/array-buffer-byte-length-1.0.1.tgz",
+@@ -4505,6 +4676,11 @@
+       "integrity": "sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==",
+       "dev": true
+     },
++    "node_modules/detect-node-es": {
++      "version": "1.1.0",
++      "resolved": "https://registry.npmjs.org/detect-node-es/-/detect-node-es-1.1.0.tgz",
++      "integrity": "sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ=="
++    },
+     "node_modules/didyoumean": {
+       "version": "1.2.2",
+       "resolved": "https://registry.npmjs.org/didyoumean/-/didyoumean-1.2.2.tgz",
+@@ -5472,6 +5648,14 @@
+         "url": "https://github.com/sponsors/ljharb"
+       }
+     },
++    "node_modules/get-nonce": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/get-nonce/-/get-nonce-1.0.1.tgz",
++      "integrity": "sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==",
++      "engines": {
++        "node": ">=6"
++      }
++    },
+     "node_modules/get-stream": {
+       "version": "8.0.1",
+       "resolved": "https://registry.npmjs.org/get-stream/-/get-stream-8.0.1.tgz",
+@@ -6153,6 +6337,14 @@
+         "node": ">= 0.10"
+       }
+     },
++    "node_modules/invariant": {
++      "version": "2.2.4",
++      "resolved": "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz",
++      "integrity": "sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==",
++      "dependencies": {
++        "loose-envify": "^1.0.0"
++      }
++    },
+     "node_modules/ip-address": {
+       "version": "9.0.5",
+       "resolved": "https://registry.npmjs.org/ip-address/-/ip-address-9.0.5.tgz",
+@@ -8989,6 +9181,51 @@
+       "integrity": "sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==",
+       "dev": true
+     },
++    "node_modules/react-remove-scroll": {
++      "version": "2.5.5",
++      "resolved": "https://registry.npmjs.org/react-remove-scroll/-/react-remove-scroll-2.5.5.tgz",
++      "integrity": "sha512-ImKhrzJJsyXJfBZ4bzu8Bwpka14c/fQt0k+cyFp/PBhTfyDnU5hjOtM4AG/0AMyy8oKzOTR0lDgJIM7pYXI0kw==",
++      "dependencies": {
++        "react-remove-scroll-bar": "^2.3.3",
++        "react-style-singleton": "^2.2.1",
++        "tslib": "^2.1.0",
++        "use-callback-ref": "^1.3.0",
++        "use-sidecar": "^1.1.2"
++      },
++      "engines": {
++        "node": ">=10"
++      },
++      "peerDependencies": {
++        "@types/react": "^16.8.0 || ^17.0.0 || ^18.0.0",
++        "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        }
++      }
++    },
++    "node_modules/react-remove-scroll-bar": {
++      "version": "2.3.6",
++      "resolved": "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.6.tgz",
++      "integrity": "sha512-DtSYaao4mBmX+HDo5YWYdBWQwYIQQshUV/dVxFxK+KM26Wjwp1gZ6rv6OC3oujI6Bfu6Xyg3TwK533AQutsn/g==",
++      "dependencies": {
++        "react-style-singleton": "^2.2.1",
++        "tslib": "^2.0.0"
++      },
++      "engines": {
++        "node": ">=10"
++      },
++      "peerDependencies": {
++        "@types/react": "^16.8.0 || ^17.0.0 || ^18.0.0",
++        "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/react-router": {
+       "version": "6.22.3",
+       "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.22.3.tgz",
+@@ -9019,6 +9256,28 @@
+         "react-dom": ">=16.8"
+       }
+     },
++    "node_modules/react-style-singleton": {
++      "version": "2.2.1",
++      "resolved": "https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.1.tgz",
++      "integrity": "sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==",
++      "dependencies": {
++        "get-nonce": "^1.0.0",
++        "invariant": "^2.2.4",
++        "tslib": "^2.0.0"
++      },
++      "engines": {
++        "node": ">=10"
++      },
++      "peerDependencies": {
++        "@types/react": "^16.8.0 || ^17.0.0 || ^18.0.0",
++        "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/read-cache": {
+       "version": "1.0.0",
+       "resolved": "https://registry.npmjs.org/read-cache/-/read-cache-1.0.0.tgz",
+@@ -10335,8 +10594,7 @@
+     "node_modules/tslib": {
+       "version": "2.6.2",
+       "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz",
+-      "integrity": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==",
+-      "dev": true
++      "integrity": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
+     },
+     "node_modules/type-check": {
+       "version": "0.4.0",
+@@ -10631,6 +10889,47 @@
+         "requires-port": "^1.0.0"
+       }
+     },
++    "node_modules/use-callback-ref": {
++      "version": "1.3.2",
++      "resolved": "https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.2.tgz",
++      "integrity": "sha512-elOQwe6Q8gqZgDA8mrh44qRTQqpIHDcZ3hXTLjBe1i4ph8XpNJnO+aQf3NaG+lriLopI4HMx9VjQLfPQ6vhnoA==",
++      "dependencies": {
++        "tslib": "^2.0.0"
++      },
++      "engines": {
++        "node": ">=10"
++      },
++      "peerDependencies": {
++        "@types/react": "^16.8.0 || ^17.0.0 || ^18.0.0",
++        "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        }
++      }
++    },
++    "node_modules/use-sidecar": {
++      "version": "1.1.2",
++      "resolved": "https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.2.tgz",
++      "integrity": "sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==",
++      "dependencies": {
++        "detect-node-es": "^1.1.0",
++        "tslib": "^2.0.0"
++      },
++      "engines": {
++        "node": ">=10"
++      },
++      "peerDependencies": {
++        "@types/react": "^16.9.0 || ^17.0.0 || ^18.0.0",
++        "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
++      },
++      "peerDependenciesMeta": {
++        "@types/react": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/util-deprecate": {
+       "version": "1.0.2",
+       "resolved": "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz",
+diff --git a/package.json b/package.json
+index 4d28a41..20e69d1 100644
+--- a/package.json
++++ b/package.json
+@@ -22,6 +22,7 @@
+   },
+   "dependencies": {
+     "@hookform/resolvers": "^3.3.4",
++    "@radix-ui/react-dropdown-menu": "^2.0.6",
+     "@radix-ui/react-toast": "^1.1.5",
+     "@radix-ui/react-tooltip": "^1.0.7",
+     "@tanstack/react-query": "^5.28.8",
+diff --git a/public/dog-hurted.svg b/public/dog-hurted.svg
+new file mode 100644
+index 0000000..5742a55
+--- /dev/null
++++ b/public/dog-hurted.svg
+@@ -0,0 +1,51 @@
++<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
++  <style>
++    .st0 {
++      fill: #e1902b
++    }
++
++    .st1 {
++      fill: #3d2a3d
++    }
++
++    .st38 {
++      fill: #b34b0f
++    }
++
++    .st39 {
++      fill: #ffc682
++    }
++
++    .st40 {
++      clip-path: url(#SVGID_2_);
++      fill: #dbdbdb
++    }
++  </style>
++  <path class="st1" d="M0 259.3C-1.8 117.9 111.3 1.9 252.7 0 394.1-1.8 510.1 111.3 512 252.7c1.8 141.4-111.3 257.5-252.7 259.3C117.9 513.8 1.9 400.7 0 259.3z" id="Layer_9" />
++  <g id="Layer_7">
++    <path class="st38" d="M216.2 159.2 102 245.9c-16.2 20.8-16.1 48.5.2 61.8l2.1 1.8c16.3 13.3 42.6 7.3 58.8-13.6l57.1-133.4-4-3.3zM297.7 159.2l114.2 86.7c16.2 20.8 16.1 48.5-.2 61.8l-2.1 1.8c-16.3 13.3-42.6 7.3-58.8-13.6l-57.1-133.4 4-3.3z" />
++    <path class="st0" d="M236.9 146c-16.4 0-34.3 13.8-39.7 30.9l-29.6 93.9c-5.4 17.1 3.6 31.2 20.1 31.2h138.6c16.4 0 25.5-14.2 20.1-31.3L316.7 177c-5.4-17.1-23.3-31-39.7-31h-40.1z" />
++    <path class="st0" d="M350.5 294.5c0 39-41.9 70.5-93.5 70.5s-93.5-31.6-93.5-70.5c0-39 41.9-70.5 93.5-70.5 51.6-.1 93.5 31.5 93.5 70.5z" />
++    <path class="st1" d="M232.4 234.4c0 6.3-5.1 11.5-11.5 11.5-6.3 0-11.5-5.1-11.5-11.5 0-6.3 5.1-11.5 11.5-11.5s11.5 5.1 11.5 11.5zM304.5 234.4c0 6.3-5.1 11.5-11.5 11.5-6.3 0-11.5-5.1-11.5-11.5 0-6.3 5.1-11.5 11.5-11.5s11.5 5.1 11.5 11.5z" />
++    <path class="st39" d="M312 315c0 16-13 29-29 29h-52c-16 0-29-13-29-29s13-29 29-29h52c16 0 29 13 29 29z" />
++    <path class="st39" d="M295.2 289.1c0 17-17.1 30.8-38.2 30.8s-38.2-13.8-38.2-30.8 17.1-30.8 38.2-30.8 38.2 13.8 38.2 30.8z" />
++    <g>
++      <path class="st1" d="M290.2 265.7c0 9.4-33.2 27.3-33.2 27.3s-33.2-18-33.2-27.3c0-9.4 14.9-11.7 33.2-11.7 18.3 0 33.2 2.3 33.2 11.7z" />
++      <path class="st1" d="M264 318.7c0 3.5-2.8 6.3-6.3 6.3h-.4c-3.5 0-6.3-2.8-6.3-6.3v-33.4c0-3.5 2.8-6.3 6.3-6.3h.4c3.5 0 6.3 2.8 6.3 6.3v33.4z" />
++    </g>
++    <g>
++      <path class="st1" d="M278.1 315.7c-.3 11.1-9.4 19.7-21.1 19.9-11.7.3-20.8-9.3-21.1-19.9-.2-6.9-11.5-6.9-11.3 0 .4 16.9 14.5 30.2 32.4 30.6 17.9.4 32-14.3 32.4-30.6.1-6.9-11.2-6.9-11.3 0z" />
++    </g>
++    <path d="M314.8 167.9c-5.4-17.1-23.3-30.9-39.7-30.9H235c-16.4 0-34.3 13.7-39.7 30.8l-29.6 93.8c-.4 1.2-.7 2.3-.9 3.4L321 187.5l-6.2-19.6z" style="fill:#fff" />
++    <g>
++      <defs>
++        <path id="SVGID_1_" d="M314.8 167.9c-5.4-17.1-23.3-30.9-39.7-30.9H235c-16.4 0-34.3 13.7-39.7 30.8l-29.6 93.8c-.4 1.2-.7 2.3-.9 3.4L321 187.5l-6.2-19.6z" />
++      </defs>
++      <clipPath id="SVGID_2_">
++        <use xlink:href="#SVGID_1_" style="overflow:visible" />
++      </clipPath>
++      <path transform="rotate(-55.75 215.996 211.889)" class="st40" d="M196 146.9h40v130h-40z" />
++      <path transform="rotate(-55.75 265.997 161.886)" class="st40" d="M246 96.9h40v130h-40z" />
++    </g>
++  </g>
++</svg>
+\ No newline at end of file
+diff --git a/src/modules/app/components/Routes.tsx b/src/modules/app/components/Routes.tsx
+index bdaa504..61c809b 100644
+--- a/src/modules/app/components/Routes.tsx
++++ b/src/modules/app/components/Routes.tsx
+@@ -1,10 +1,11 @@
+ import { Navigate, Route, Routes as ApplicationRoutes } from "react-router-dom";
+ 
+-import { Login, Logout, NewPassword, RecoveryPassword } from "@/modules/auth";
++import { Login, Logout } from "@/modules/auth";
++import { ListLinks } from "@/modules/link";
+ import { ROUTES } from "@/modules/shared/application/Routes";
+ import { useAuth } from "@/modules/shared/authorization/hooks";
+ import { Loading } from "@/modules/shared/design-system/components";
+-import { CreateUser } from "@/modules/user";
++import { CreateUser, NewPassword, RecoveryPassword } from "@/modules/user";
+ 
+ export const Routes = () => {
+   const { auth } = useAuth();
+@@ -20,8 +21,9 @@ export const Routes = () => {
+           path={ROUTES.SOURCE}
+           element={<Navigate replace to={ROUTES.HOME} />}
+         />
+-        <Route path={ROUTES.HOME} element={<h1>Area logada</h1>} />
++        <Route path={ROUTES.HOME} element={<ListLinks />} />
+         <Route path={ROUTES.LOGOUT} element={<Logout />} />
++        <Route path={ROUTES.USER_CONFIGURATIONS} element={<h1>adkoasdkf</h1>} />
+ 
+         <Route path="*" element={<Navigate replace to={ROUTES.HOME} />} />
+       </ApplicationRoutes>
+diff --git a/src/modules/auth/index.ts b/src/modules/auth/index.ts
+index d2d365a..1614ec4 100644
+--- a/src/modules/auth/index.ts
++++ b/src/modules/auth/index.ts
+@@ -1,4 +1,2 @@
+ export * from "./login";
+ export * from "./logout";
+-export * from "./new-password";
+-export * from "./recovery-password";
+diff --git a/src/modules/link/index.ts b/src/modules/link/index.ts
+new file mode 100644
+index 0000000..c5f6659
+--- /dev/null
++++ b/src/modules/link/index.ts
+@@ -0,0 +1 @@
++export * from "./list-links";
+diff --git a/src/modules/link/links/__mocks__/get-all-links.ts b/src/modules/link/links/__mocks__/get-all-links.ts
+new file mode 100644
+index 0000000..d80eff1
+--- /dev/null
++++ b/src/modules/link/links/__mocks__/get-all-links.ts
+@@ -0,0 +1,24 @@
++import { faker } from "@faker-js/faker";
++
++import { Link } from "../types/links.types";
++
++const createMockLink = (): Link => ({
++  id: faker.string.uuid(),
++  redirectTo: faker.internet.url(),
++  active: faker.datatype.boolean(),
++  hash: faker.string.alphanumeric(8),
++  validAt: faker.date.between({
++    from: faker.date.past(),
++    to: faker.date.future(),
++  }),
++  alias: faker.lorem.word(),
++  metadata: {
++    description: faker.lorem.sentence(),
++    title: faker.lorem.word(),
++    photo: faker.image.avatar(),
++  },
++});
++
++export const getAllLinksMock = Array(5)
++  .fill(undefined)
++  .map(() => createMockLink());
+diff --git a/src/modules/link/links/hooks/index.ts b/src/modules/link/links/hooks/index.ts
+new file mode 100644
+index 0000000..fc24232
+--- /dev/null
++++ b/src/modules/link/links/hooks/index.ts
+@@ -0,0 +1 @@
++export * from "./useLinks";
+diff --git a/src/modules/link/links/hooks/useLinks.test.ts b/src/modules/link/links/hooks/useLinks.test.ts
+new file mode 100644
+index 0000000..17a9a46
+--- /dev/null
++++ b/src/modules/link/links/hooks/useLinks.test.ts
+@@ -0,0 +1,70 @@
++import { http, HttpResponse } from "msw";
++import { beforeAll, describe, expect, it } from "vitest";
++
++import {
++  API_ROUTES,
++  HTTP_STATUS_CODE,
++} from "@/modules/shared/application/http/types";
++import { server } from "@/modules/shared/tests";
++import { AllTheProviders } from "@/modules/shared/tests/providers";
++import { renderHook, waitFor } from "@testing-library/react";
++
++import { getAllLinksMock } from "../__mocks__/get-all-links";
++
++import { useLinks } from "./useLinks";
++
++describe("modules/links/hooks/useLinks", () => {
++  describe("When call get all links api", () => {
++    describe("and happens a error", () => {
++      beforeAll(() => {
++        server.use(
++          http.get(
++            `${import.meta.env.VITE_BASE_URL}/${API_ROUTES.GET_ALL_LINKS}`,
++            () =>
++              HttpResponse.json(
++                { error: "some error" },
++                {
++                  status: HTTP_STATUS_CODE.BAD_REQUEST,
++                },
++              ),
++          ),
++        );
++      });
++
++      it("should returns a empty array", async () => {
++        const hookResponse = renderHook(() => useLinks(), {
++          wrapper: AllTheProviders,
++        });
++        await waitFor(() => {
++          expect(hookResponse.result.current.links).toEqual([]);
++        });
++      });
++    });
++
++    describe("and api returned with success", () => {
++      beforeAll(() => {
++        server.use(
++          http.get(
++            `${import.meta.env.VITE_BASE_URL}/${API_ROUTES.GET_ALL_LINKS}`,
++            () => HttpResponse.json(getAllLinksMock),
++          ),
++        );
++      });
++
++      it("should show a link list", async () => {
++        const hookResponse = renderHook(() => useLinks(), {
++          wrapper: AllTheProviders,
++        });
++
++        await waitFor(() => {
++          expect(hookResponse.result.current.links).toEqual(
++            getAllLinksMock.map((link) => ({
++              ...link,
++              validAt: new Date(link.validAt).toISOString(),
++            })),
++          );
++        });
++      });
++    });
++  });
++});
+diff --git a/src/modules/link/links/hooks/useLinks.ts b/src/modules/link/links/hooks/useLinks.ts
+new file mode 100644
+index 0000000..436394e
+--- /dev/null
++++ b/src/modules/link/links/hooks/useLinks.ts
+@@ -0,0 +1,54 @@
++import { useEffect } from "react";
++import { atom, useAtom } from "jotai";
++
++import { useFetch } from "@/modules/shared/application/http/hooks";
++import {
++  API_ROUTES,
++  FetchErrorResponse,
++  FetchResponse,
++} from "@/modules/shared/application/http/types";
++import { useQuery } from "@tanstack/react-query";
++
++import { Link } from "../types/links.types";
++
++export type GetAllResponse = FetchResponse<Link[]>;
++
++export type UseLinksResponse = {
++  links: Link[];
++  isFetchingLinks: boolean;
++  isFetchedLinks: boolean;
++};
++
++export const linksAtom = atom([] as Link[]);
++
++export const useLinks = (): UseLinksResponse => {
++  const { asyncFetch } = useFetch();
++
++  const [links, setLinks] = useAtom(linksAtom);
++
++  const {
++    data: linksResponse,
++    isLoading,
++    isFetched,
++    isSuccess,
++  } = useQuery<unknown, FetchErrorResponse<{ error: string }>, GetAllResponse>({
++    queryKey: ["allLinks"],
++    queryFn: async () =>
++      asyncFetch({
++        endpoint: API_ROUTES.GET_ALL_LINKS,
++        method: "GET",
++      }),
++  });
++
++  useEffect(() => {
++    if (isFetched && isSuccess && linksResponse.data?.length) {
++      setLinks(linksResponse.data);
++    }
++  }, [isFetched, isSuccess, linksResponse?.data, setLinks]);
++
++  return {
++    links,
++    isFetchingLinks: isLoading,
++    isFetchedLinks: isFetched,
++  };
++};
+diff --git a/src/modules/link/links/types/links.types.ts b/src/modules/link/links/types/links.types.ts
+new file mode 100644
+index 0000000..5405820
+--- /dev/null
++++ b/src/modules/link/links/types/links.types.ts
+@@ -0,0 +1,15 @@
++type LinkMetadata = {
++  title?: string;
++  description?: string;
++  photo?: string;
++};
++
++export type Link = {
++  id: string;
++  redirectTo: string;
++  active: boolean;
++  hash: string;
++  validAt: Date;
++  alias: string;
++  metadata?: LinkMetadata;
++};
+diff --git a/src/modules/link/list-links/ListLinks.i18n.ts b/src/modules/link/list-links/ListLinks.i18n.ts
+new file mode 100644
+index 0000000..89b10fe
+--- /dev/null
++++ b/src/modules/link/list-links/ListLinks.i18n.ts
+@@ -0,0 +1,25 @@
++import { MessagesTypes } from "@/modules/shared/translation/models";
++
++export const locales: MessagesTypes = {
++  "pt-BR": {
++    title: "Meus links",
++    thread: {
++      shortLink: "Link encurtado",
++      redirectTo: "Redireciona para",
++      active: "Ativo",
++      expiresIn: "Expira em",
++    },
++    tbody: {
++      enabled: "SIM",
++      disabled: "NÃO",
++      olloShortLink: "https://ollo.li/{shortLink}",
++      edit: "Editar",
++    },
++    emptyState: {
++      title: "Nenhum link encontrado",
++      Subtitle: "Você pode criar um novo link clicando",
++      link: "aqui",
++    },
++  },
++  "en-US": {},
++};
+diff --git a/src/modules/link/list-links/ListLinks.test.tsx b/src/modules/link/list-links/ListLinks.test.tsx
+new file mode 100644
+index 0000000..bd292ff
+--- /dev/null
++++ b/src/modules/link/list-links/ListLinks.test.tsx
+@@ -0,0 +1,84 @@
++import { http, HttpResponse } from "msw";
++import { describe, expect, it, vi } from "vitest";
++
++import { API_ROUTES } from "@/modules/shared/application/http/types";
++import { ROUTES } from "@/modules/shared/application/Routes";
++import { act, render, screen, server, waitFor } from "@/modules/shared/tests";
++import { TranslationProvider } from "@/modules/shared/translation/context";
++import userEvent from "@testing-library/user-event";
++
++import { getAllLinksMock } from "../links/__mocks__/get-all-links";
++
++import { ListLinks } from "./ListLinks";
++import { locales } from "./ListLinks.i18n";
++
++function renderComponent() {
++  render(
++    <TranslationProvider messages={locales}>
++      <ListLinks />
++    </TranslationProvider>,
++  );
++}
++
++describe("modules/links/ListLinks", () => {
++  it("Should be able to render list link page with empty state", async () => {
++    server.use(
++      http.get(
++        `${import.meta.env.VITE_BASE_URL}/${API_ROUTES.GET_ALL_LINKS}`,
++        () => HttpResponse.json([]),
++      ),
++    );
++
++    renderComponent();
++
++    screen.getByText(/ollo.li/i);
++    screen.getByRole("heading", {
++      name: /meus links/i,
++    });
++
++    await waitFor(() => {
++      screen.getByText(/nenhum link encontrado/i);
++    });
++    screen.getByText(/você pode criar um novo link clicando/i);
++
++    const goToNewLink = screen.getByRole("link", {
++      name: /aqui/i,
++    }) as HTMLAnchorElement;
++
++    expect(goToNewLink.href.endsWith(ROUTES.NEW_LINK)).toBeTruthy();
++  });
++
++  it("Should render link table", async () => {
++    const openMock = vi.fn();
++    vi.spyOn(window, "open").mockImplementationOnce(openMock);
++
++    const [firstLink] = getAllLinksMock;
++
++    server.use(
++      http.get(
++        `${import.meta.env.VITE_BASE_URL}/${API_ROUTES.GET_ALL_LINKS}`,
++        async () => {
++          return HttpResponse.json([firstLink]);
++        },
++      ),
++    );
++
++    renderComponent();
++
++    await waitFor(() => screen.getByText(/link encurtado/i));
++    screen.getByText(/redireciona para/i);
++    screen.getByText(firstLink.redirectTo);
++    screen.getByText(/ativo/i);
++    screen.getByText(firstLink.active ? "SIM" : "NÃO");
++    screen.getByText(/expira em/i);
++
++    const shortLink = screen.getByText(firstLink.alias) as HTMLButtonElement;
++
++    await act(() => userEvent.click(shortLink));
++
++    expect(openMock).toHaveBeenCalledWith(`https://ollo.li/${firstLink.alias}`);
++    await waitFor(() => {
++      expect(openMock).toHaveBeenCalledTimes(1);
++    });
++  });
++});
+diff --git a/src/modules/link/list-links/ListLinks.tsx b/src/modules/link/list-links/ListLinks.tsx
+new file mode 100644
+index 0000000..5531d81
+--- /dev/null
++++ b/src/modules/link/list-links/ListLinks.tsx
+@@ -0,0 +1,24 @@
++import { AdminLayout, SideMenu } from "@/modules/shared/design-system";
++import { Navbar } from "@/modules/shared/design-system";
++import { TranslationProvider } from "@/modules/shared/translation/context";
++
++import { LinksTable } from "./components/LinksTable";
++import { locales } from "./ListLinks.i18n";
++
++export const ListLinks = () => {
++  return (
++    <TranslationProvider messages={locales}>
++      <AdminLayout>
++        <AdminLayout.Sidebar>
++          <SideMenu />
++        </AdminLayout.Sidebar>
++        <AdminLayout.Nav>
++          <Navbar />
++        </AdminLayout.Nav>
++        <AdminLayout.Main title="Meus links">
++          <LinksTable />
++        </AdminLayout.Main>
++      </AdminLayout>
++    </TranslationProvider>
++  );
++};
+diff --git a/src/modules/link/list-links/components/LinkName.tsx b/src/modules/link/list-links/components/LinkName.tsx
+new file mode 100644
+index 0000000..73e6865
+--- /dev/null
++++ b/src/modules/link/list-links/components/LinkName.tsx
+@@ -0,0 +1,26 @@
++import { Tooltip } from "@/modules/shared/design-system";
++import { useTranslation } from "@/modules/shared/translation/hooks";
++
++type LinkNameProps = {
++  shortLink: string;
++};
++
++export const LinkName = ({ shortLink }: LinkNameProps) => {
++  const { t } = useTranslation();
++
++  const handleGoToShortLink = () =>
++    window.open(t("tbody.olloShortLink", { shortLink }));
++
++  return (
++    <Tooltip>
++      <Tooltip.Trigger>
++        <button className="text-lg text-gray-500" onClick={handleGoToShortLink}>
++          {shortLink}
++        </button>
++      </Tooltip.Trigger>
++      <Tooltip.Content>
++        {t("tbody.olloShortLink", { shortLink })}
++      </Tooltip.Content>
++    </Tooltip>
++  );
++};
+diff --git a/src/modules/link/list-links/components/LinksTable.tsx b/src/modules/link/list-links/components/LinksTable.tsx
+new file mode 100644
+index 0000000..ff30e19
+--- /dev/null
++++ b/src/modules/link/list-links/components/LinksTable.tsx
+@@ -0,0 +1,94 @@
++import { format } from "date-fns";
++
++import { ROUTES } from "@/modules/shared/application/Routes";
++import {
++  Bomb,
++  Button,
++  EmptyState,
++  Link,
++  Table,
++  Text,
++  useTable,
++} from "@/modules/shared/design-system";
++import { useTranslation } from "@/modules/shared/translation/hooks";
++
++import { useLinks } from "../../links/hooks";
++
++import { LinkName } from "./LinkName";
++// import { TableHead } from "./TableHead";
++// import { TableSkeleton } from "./TableSkeleton";
++
++export const LinksTable = () => {
++  const { t } = useTranslation();
++  const { links, isFetchingLinks, isFetchedLinks } = useLinks();
++
++  useTable({
++    columns: [
++      { name: t("thread.shortLink"), isSortable: true },
++      { name: t("thread.redirectTo"), isSortable: true },
++      { name: t("thread.active"), isSortable: true },
++      { name: t("thread.expiresIn"), isSortable: true },
++    ],
++  });
++
++  if (!links.length && isFetchedLinks) {
++    return (
++      <EmptyState>
++        <Bomb size={42} className="text-gray-400 mb-4" />
++        <Text as="p" size="lg" weight="bold" className="text-gray-500">
++          {t("emptyState.title")}
++        </Text>
++        <Text as="p" size="l" weight="medium" className="text-gray-500">
++          {t("emptyState.subtitle")}
++
++          <Link href={ROUTES.NEW_LINK}>{t("emptyState.link")}</Link>
++        </Text>
++      </EmptyState>
++    );
++  }
++
++  return (
++    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
++      <Table>
++        <Table.Thead withSrOnly />
++        <Table.Tbody isLoading={isFetchingLinks}>
++          {links?.map((link) => (
++            <tr key={link.hash} className="bg-zinc-50 hover:bg-gray-100">
++              <th
++                scope="row"
++                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
++              >
++                <LinkName shortLink={link.alias ?? link.hash} />
++              </th>
++              <td className="px-6 py-4">
++                <Link
++                  href={link.redirectTo}
++                  target="blank"
++                  className="text-gray-500"
++                  underline="hover"
++                >
++                  {link.redirectTo}
++                </Link>
++              </td>
++              <td className="px-6 py-4">
++                <Text
++                  as="span"
++                  color={link.active ? "secondary" : "error"}
++                  weight="bold"
++                >
++                  {t(link.active ? "tbody.enabled" : "tbody.disabled")}
++                </Text>
++              </td>
++              <td className="px-6 py-4">
++                {format(link.validAt, "dd/MM/yyyy")}
++              </td>
++              <td className="px-6 py-4 text-right">
++                <Button variant="ternary">{t("tbody.edit")}</Button>
++              </td>
++            </tr>
++          ))}
++        </Table.Tbody>
++      </Table>
++    </div>
++  );
++};
+diff --git a/src/modules/link/list-links/components/TableHead.tsx b/src/modules/link/list-links/components/TableHead.tsx
+new file mode 100644
+index 0000000..c6d3c8c
+--- /dev/null
++++ b/src/modules/link/list-links/components/TableHead.tsx
+@@ -0,0 +1,26 @@
++import { RenderCondition } from "@/modules/shared/design-system";
++
++type TableHeadProps = {
++  values: string[];
++  withSrOnly?: boolean;
++};
++
++export const TableHead = ({ values, withSrOnly }: TableHeadProps) => {
++  return (
++    <thead className="text-xs text-gray-700 uppercase bg-gray-200">
++      <tr>
++        {values.map((value) => (
++          <th key={value} scope="col" className="px-6 py-3">
++            {value}
++          </th>
++        ))}
++
++        <RenderCondition.If isTruth={Boolean(withSrOnly)}>
++          <th scope="col" className="px-6 py-3">
++            <span className="sr-only"></span>
++          </th>
++        </RenderCondition.If>
++      </tr>
++    </thead>
++  );
++};
+diff --git a/src/modules/link/list-links/components/TableSkeleton.tsx b/src/modules/link/list-links/components/TableSkeleton.tsx
+new file mode 100644
+index 0000000..1e4572b
+--- /dev/null
++++ b/src/modules/link/list-links/components/TableSkeleton.tsx
+@@ -0,0 +1,21 @@
++import { Skeleton } from "@/modules/shared/design-system";
++
++export const TableSkeleton = () => {
++  return (
++    <>
++      {Array(4)
++        .fill(undefined)
++        .map((_, index) => (
++          <tr key={index}>
++            {Array(5)
++              .fill(undefined)
++              .map((_, index) => (
++                <td key={index} className="px-6 py-4">
++                  <Skeleton />
++                </td>
++              ))}
++          </tr>
++        ))}
++    </>
++  );
++};
+diff --git a/src/modules/link/list-links/index.ts b/src/modules/link/list-links/index.ts
+new file mode 100644
+index 0000000..ec95e05
+--- /dev/null
++++ b/src/modules/link/list-links/index.ts
+@@ -0,0 +1 @@
++export * from "./ListLinks";
+diff --git a/src/modules/shared/application/Routes.ts b/src/modules/shared/application/Routes.ts
+index cae516d..bb516b9 100644
+--- a/src/modules/shared/application/Routes.ts
++++ b/src/modules/shared/application/Routes.ts
+@@ -6,4 +6,6 @@ export const ROUTES = {
+   NEW_USER: "/new-user",
+   RECOVERY_PASSWORD: "/recovery-password",
+   NEW_PASSWORD: "/new-password",
++  USER_CONFIGURATIONS: "/user-configurations",
++  NEW_LINK: "/link/new",
+ };
+diff --git a/src/modules/shared/application/http/types/fetch.types.ts b/src/modules/shared/application/http/types/fetch.types.ts
+index 84adfb6..ef5e6f5 100644
+--- a/src/modules/shared/application/http/types/fetch.types.ts
++++ b/src/modules/shared/application/http/types/fetch.types.ts
+@@ -4,6 +4,7 @@ export enum API_ROUTES {
+   CREATE_USER = "api/users",
+   CHANGE_PASSWORD = "api/users/changePassword",
+   RECOVERY_PASSWORD = "api/email/recoveryPassword",
++  GET_ALL_LINKS = "api/links",
+ }
+ 
+ export type DefaultErrorDataResponse = Record<string, unknown>;
+diff --git a/src/modules/shared/design-system/components/Button/Button.tsx b/src/modules/shared/design-system/components/Button/Button.tsx
+index edc1bf0..a50fa3f 100644
+--- a/src/modules/shared/design-system/components/Button/Button.tsx
++++ b/src/modules/shared/design-system/components/Button/Button.tsx
+@@ -11,9 +11,9 @@ const button = tv({
+     variant: {
+       primary: "bg-primary-500 enabled:hover:bg-primary-400",
+       secondary:
+-        "border-primary-200 bg-white text-primary-500 border-solid border-2 enabled:hover:bg-primary-100",
++        "border-primary-200 bg-transparent text-primary-500 border-solid border-2 enabled:hover:bg-primary-100",
+       ternary:
+-        "border-none bg-white text-primary-500 enabled:hover:bg-primary-100",
++        "border-none bg-transparent text-primary-500 enabled:hover:bg-primary-100",
+       error: "bg-red-500 enabled:hover:bg-red-400",
+       none: "",
+     },
+diff --git a/src/modules/shared/design-system/components/DropdownMenu/DropdownMenu.tsx b/src/modules/shared/design-system/components/DropdownMenu/DropdownMenu.tsx
+new file mode 100644
+index 0000000..a0ff0df
+--- /dev/null
++++ b/src/modules/shared/design-system/components/DropdownMenu/DropdownMenu.tsx
+@@ -0,0 +1,38 @@
++import { ReactNode } from "react";
++
++import { Content, Portal, Root, Trigger } from "@radix-ui/react-dropdown-menu";
++
++import { Item } from "./components/Item";
++import { Label } from "./components/Label";
++
++type DropdownMenuProps = {
++  children: ReactNode | ReactNode[];
++  icon: ReactNode;
++};
++
++export const DropdownMenu = ({ children, icon }: DropdownMenuProps) => {
++  return (
++    <Root>
++      <Trigger asChild>
++        <button
++          className="rounded-full w-9 h-9 inline-flex items-center justify-center bg-primary-400 text-white shadow-[0_2px_10px] shadow-gray-300 outline-none hover:bg-primary-500 focus:shadow-[0_0_0_2px]"
++          aria-label="dropdown menu click icon"
++        >
++          {icon}
++        </button>
++      </Trigger>
++
++      <Portal>
++        <Content
++          className="z-1 min-w-[220px] border-[1px] border-primary-200 bg-gray-50 rounded-md p-[5px] data-[side=top]:animate-slideDownAndFade data-[side=right]:animate-slideLeftAndFade data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade"
++          sideOffset={5}
++        >
++          {children}
++        </Content>
++      </Portal>
++    </Root>
++  );
++};
++
++DropdownMenu.Item = Item;
++DropdownMenu.Label = Label;
+diff --git a/src/modules/shared/design-system/components/DropdownMenu/components/Item.tsx b/src/modules/shared/design-system/components/DropdownMenu/components/Item.tsx
+new file mode 100644
+index 0000000..cf00ef3
+--- /dev/null
++++ b/src/modules/shared/design-system/components/DropdownMenu/components/Item.tsx
+@@ -0,0 +1,32 @@
++import { ComponentProps, ReactNode } from "react";
++import { tv, VariantProps } from "tailwind-variants";
++
++import { Item as DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
++
++const item = tv({
++  base: "rounded-md group text-m leading-none text-primary-700 flex items-center h-10 px-1 relative pl-6 select-none cursor-pointer outline-none data-[disabled]:cursor-none data-[disabled]:text-gray-400 data-[disabled]:pointer-events-none data-[highlighted]:bg-primary-400 data-[highlighted]:text-white",
++});
++
++type ItemProps = ComponentProps<"div"> &
++  VariantProps<typeof item> & {
++    children: ReactNode;
++    onClick?: () => void;
++    disabled?: boolean;
++  };
++
++export const Item = ({
++  children,
++  onClick,
++  disabled = false,
++  ...props
++}: ItemProps) => {
++  return (
++    <DropdownMenuItem
++      onClick={onClick}
++      disabled={disabled}
++      className={item(props)}
++    >
++      {children}
++    </DropdownMenuItem>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/DropdownMenu/components/Label.tsx b/src/modules/shared/design-system/components/DropdownMenu/components/Label.tsx
+new file mode 100644
+index 0000000..41662ef
+--- /dev/null
++++ b/src/modules/shared/design-system/components/DropdownMenu/components/Label.tsx
+@@ -0,0 +1,19 @@
++import { ComponentProps, ReactNode } from "react";
++import { tv, VariantProps } from "tailwind-variants";
++
++import { Label as DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
++
++const label = tv({
++  base: "pl-5 text-s leading-6 text-primary-500 font-medium",
++});
++
++type LabelProps = ComponentProps<"div"> &
++  VariantProps<typeof label> & {
++    children: ReactNode;
++  };
++
++export const Label = ({ children, ...props }: LabelProps) => {
++  return (
++    <DropdownMenuLabel className={label(props)}>{children}</DropdownMenuLabel>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/DropdownMenu/components/Separator.tsx b/src/modules/shared/design-system/components/DropdownMenu/components/Separator.tsx
+new file mode 100644
+index 0000000..12e2b0c
+--- /dev/null
++++ b/src/modules/shared/design-system/components/DropdownMenu/components/Separator.tsx
+@@ -0,0 +1,5 @@
++import { Separator as DropdownMenuSeparator } from "@radix-ui/react-dropdown-menu";
++
++export const Separator = () => {
++  return <DropdownMenuSeparator className="h-[1px] bg-violet6 m-[5px]" />;
++};
+diff --git a/src/modules/shared/design-system/components/DropdownMenu/index.ts b/src/modules/shared/design-system/components/DropdownMenu/index.ts
+new file mode 100644
+index 0000000..54b11fc
+--- /dev/null
++++ b/src/modules/shared/design-system/components/DropdownMenu/index.ts
+@@ -0,0 +1 @@
++export * from "./DropdownMenu";
+diff --git a/src/modules/shared/design-system/components/EmptyState/EmptyState.tsx b/src/modules/shared/design-system/components/EmptyState/EmptyState.tsx
+new file mode 100644
+index 0000000..a235db1
+--- /dev/null
++++ b/src/modules/shared/design-system/components/EmptyState/EmptyState.tsx
+@@ -0,0 +1,13 @@
++import { ReactNode } from "react";
++
++type EmptyStateProps = {
++  children: ReactNode;
++};
++
++export const EmptyState = ({ children }: EmptyStateProps) => {
++  return (
++    <section className="flex flex-col justify-center items-center w-full h-60 border-4 border-dashed border-coolGray-100 rounded-xl">
++      {children}
++    </section>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/EmptyState/index.ts b/src/modules/shared/design-system/components/EmptyState/index.ts
+new file mode 100644
+index 0000000..986154c
+--- /dev/null
++++ b/src/modules/shared/design-system/components/EmptyState/index.ts
+@@ -0,0 +1 @@
++export * from "./EmptyState";
+diff --git a/src/modules/shared/design-system/components/Icons.ts b/src/modules/shared/design-system/components/Icons.ts
+index 94f48ef..2079195 100644
+--- a/src/modules/shared/design-system/components/Icons.ts
++++ b/src/modules/shared/design-system/components/Icons.ts
+@@ -1,11 +1,19 @@
+ export {
+   AArrowDown,
++  Bolt,
++  Bomb,
+   Check,
++  ChevronDown,
+   ChevronRight,
++  ChevronsDownUp,
++  ChevronUp,
+   Eye,
+   EyeOff,
++  Link as LinkIcon,
+   Mail,
++  Menu,
+   RectangleEllipsis,
+   ShieldCheck,
++  Table as TableIcon,
+   X,
+ } from "lucide-react";
+diff --git a/src/modules/shared/design-system/components/Layout/AdminLayout.tsx b/src/modules/shared/design-system/components/Layout/AdminLayout.tsx
+index 20f4c0f..4e5247d 100644
+--- a/src/modules/shared/design-system/components/Layout/AdminLayout.tsx
++++ b/src/modules/shared/design-system/components/Layout/AdminLayout.tsx
+@@ -11,13 +11,13 @@ type RootParams = {
+ 
+ export const AdminLayout = ({ children }: RootParams) => {
+   return (
+-    <div className="h-screen grid grid-rows-[auto,1fr,auto] grid-cols-[200px,auto] [grid-template-areas:'nav_nav''sidebar_main''sidebar_footer']">
++    <div className="h-screen w-full grid grid-rows-[auto,1fr,auto] grid-cols-[200px,1fr] [grid-template-areas:'sidebar_nav''sidebar_main''sidebar_footer']">
+       {children}
+     </div>
+   );
+ };
+ 
++AdminLayout.Sidebar = Sidebar;
+ AdminLayout.Nav = Nav;
+ AdminLayout.Main = Main;
+-AdminLayout.Sidebar = Sidebar;
+ AdminLayout.Footer = Footer;
+diff --git a/src/modules/shared/design-system/components/Layout/components/Footer.tsx b/src/modules/shared/design-system/components/Layout/components/Footer.tsx
+index f782e90..860c45b 100644
+--- a/src/modules/shared/design-system/components/Layout/components/Footer.tsx
++++ b/src/modules/shared/design-system/components/Layout/components/Footer.tsx
+@@ -6,7 +6,7 @@ type FooterParams = {
+ 
+ export const Footer = ({ children }: FooterParams) => {
+   return (
+-    <footer className="col-span-2 flex justify-center items-center sticky bottom-0 bg-white p-4 h-16 [grid-area:footer]">
++    <footer className="flex justify-center items-center sticky bottom-0 bg-white p-4 h-16 [grid-area:footer]">
+       {children}
+     </footer>
+   );
+diff --git a/src/modules/shared/design-system/components/Layout/components/Main.tsx b/src/modules/shared/design-system/components/Layout/components/Main.tsx
+index 1c4e171..64f6661 100644
+--- a/src/modules/shared/design-system/components/Layout/components/Main.tsx
++++ b/src/modules/shared/design-system/components/Layout/components/Main.tsx
+@@ -1,6 +1,10 @@
+ import { ComponentProps, ReactNode } from "react";
+ import { tv, VariantProps } from "tailwind-variants";
+ 
++import { Heading } from "../../Heading";
++import { RenderCondition } from "../../RenderCondition";
++import { Text } from "../../Text";
++
+ const main = tv({
+   base: "col-start-2 row-start-2 row-end-3 overflow-y-auto p-8 [grid-area:main]",
+ });
+@@ -8,8 +12,20 @@ const main = tv({
+ type MainParams = ComponentProps<"main"> &
+   VariantProps<typeof main> & {
+     children: ReactNode;
++    title?: string;
+   };
+ 
+-export const Main = ({ children, ...props }: MainParams) => {
+-  return <main className={main(props)}>{children}</main>;
++export const Main = ({ children, title, ...props }: MainParams) => {
++  return (
++    <main className={main(props)}>
++      <RenderCondition.If isTruth={Boolean(title ?? false)}>
++        <Heading as="h2" className="text-start my-8">
++          <Text as="span" weight="bold" className="text-4xl">
++            {title}
++          </Text>
++        </Heading>
++      </RenderCondition.If>
++      {children}
++    </main>
++  );
+ };
+diff --git a/src/modules/shared/design-system/components/Layout/components/Nav.tsx b/src/modules/shared/design-system/components/Layout/components/Nav.tsx
+index 0932aa2..f277bb3 100644
+--- a/src/modules/shared/design-system/components/Layout/components/Nav.tsx
++++ b/src/modules/shared/design-system/components/Layout/components/Nav.tsx
+@@ -6,7 +6,7 @@ type NavParams = {
+ 
+ export const Nav = ({ children }: NavParams) => {
+   return (
+-    <nav className="col-span-2 flex justify-between items-center sticky top-0 z-10 border-b-black bg-white p-4 h-16 [grid-area:nav]">
++    <nav className="flex justify-between items-center sticky top-0 border-b-black p-4 h-16 [grid-area:nav]">
+       {children}
+     </nav>
+   );
+diff --git a/src/modules/shared/design-system/components/Layout/components/Sidebar.tsx b/src/modules/shared/design-system/components/Layout/components/Sidebar.tsx
+index ef94fe1..dc5b33c 100644
+--- a/src/modules/shared/design-system/components/Layout/components/Sidebar.tsx
++++ b/src/modules/shared/design-system/components/Layout/components/Sidebar.tsx
+@@ -6,7 +6,7 @@ type SidebarParams = {
+ 
+ export const Sidebar = ({ children }: SidebarParams) => {
+   return (
+-    <aside className="flex flex-col items-center overflow-y-auto sticky top-[var(--nav-height)] h-[calc(100vh-var(--nav-height)-var(--footer-height))] bg-zinc-200 p-4 [grid-area:sidebar]">
++    <aside className="row-span-3 lex flex-col items-center bg-zinc-50 p-6 overflow-y-auto sticky top-[var(--nav-height)] h-[calc(100vh-var(--nav-height)-var(--footer-height))] [grid-area:sidebar]">
+       {children}
+     </aside>
+   );
+diff --git a/src/modules/shared/design-system/components/Link/Link.tsx b/src/modules/shared/design-system/components/Link/Link.tsx
+new file mode 100644
+index 0000000..f47cf7f
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Link/Link.tsx
+@@ -0,0 +1,50 @@
++import { ComponentProps, ReactNode } from "react";
++import { tv, VariantProps } from "tailwind-variants";
++
++const link = tv({
++  base: "cursor-pointer",
++  variants: {
++    variant: {
++      primary: "text-primary-500",
++      secondary: "text-secondary-500",
++    },
++    size: {
++      xs: "text-xs",
++      sm: "text-sm",
++      m: "text-base",
++      l: "text-lg",
++      lg: "text-xl",
++      xl: "text-2xl",
++    },
++    weight: {
++      thin: "font-thin",
++      light: "font-light",
++      regular: "font-normal",
++      medium: "font-medium	",
++      bold: "font-bold",
++    },
++    underline: {
++      hover: "hover:underline",
++      normal: "underline",
++    },
++  },
++  defaultVariants: {
++    variant: "primary",
++    size: "m",
++    weight: "regular",
++    underline: "hover",
++  },
++});
++
++type LinkProps = ComponentProps<"a"> &
++  VariantProps<typeof link> & {
++    children: ReactNode;
++  };
++
++export const Link = ({ children, ...props }: LinkProps) => {
++  return (
++    <a className={link(props)} {...props}>
++      {children}
++    </a>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/Link/index.ts b/src/modules/shared/design-system/components/Link/index.ts
+new file mode 100644
+index 0000000..3b40a46
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Link/index.ts
+@@ -0,0 +1 @@
++export * from "./Link";
+diff --git a/src/modules/shared/design-system/components/Navbar/Navbar.i18n.ts b/src/modules/shared/design-system/components/Navbar/Navbar.i18n.ts
+new file mode 100644
+index 0000000..3292027
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Navbar/Navbar.i18n.ts
+@@ -0,0 +1,11 @@
++import { MessagesTypes } from "@/modules/shared/translation/models";
++
++export const locales: MessagesTypes = {
++  "pt-BR": {
++    userSettings: {
++      label: "Usuário",
++      settings: "Configurações do usuário",
++    },
++  },
++  "en-US": {},
++};
+diff --git a/src/modules/shared/design-system/components/Navbar/Navbar.test.tsx b/src/modules/shared/design-system/components/Navbar/Navbar.test.tsx
+new file mode 100644
+index 0000000..95608d7
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Navbar/Navbar.test.tsx
+@@ -0,0 +1,53 @@
++import { describe, expect, it } from "vitest";
++
++import { ROUTES } from "@/modules/shared/application/Routes";
++import {
++  act,
++  mockNavigate,
++  render,
++  screen,
++  waitFor,
++} from "@/modules/shared/tests";
++import userEvent from "@testing-library/user-event";
++
++import { Navbar } from "./Navbar";
++
++describe("modules/shared/navbar", () => {
++  it("Should be able to render all infos with success", async () => {
++    render(<Navbar />);
++
++    const dropdownMenu = screen.getByRole("button", {
++      name: "dropdown menu click icon",
++    });
++
++    await act(() => userEvent.click(dropdownMenu));
++
++    await waitFor(() => {
++      screen.getByText(/^usuário$/i);
++    });
++
++    screen.getByText(/configurações do usuário/i);
++  });
++
++  it('Should be able to click on "Configurações de usuário" and redirect to user configuration', async () => {
++    render(<Navbar />);
++
++    const dropdownMenu = screen.getByRole("button", {
++      name: "dropdown menu click icon",
++    });
++
++    await act(() => userEvent.click(dropdownMenu));
++
++    await waitFor(() => {
++      screen.getByText(/^usuário$/i);
++    });
++
++    const option = screen.getByText(
++      /configurações do usuário/i,
++    ) as HTMLDivElement;
++
++    await userEvent.click(option);
++
++    expect(mockNavigate).toHaveBeenCalledWith(ROUTES.USER_CONFIGURATIONS);
++  });
++});
+diff --git a/src/modules/shared/design-system/components/Navbar/Navbar.tsx b/src/modules/shared/design-system/components/Navbar/Navbar.tsx
+new file mode 100644
+index 0000000..061c85a
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Navbar/Navbar.tsx
+@@ -0,0 +1,25 @@
++import { useNavigate } from "react-router-dom";
++
++import { ROUTES } from "@/modules/shared/application/Routes";
++import { Bolt } from "@/modules/shared/design-system";
++import { useTranslation } from "@/modules/shared/translation/hooks";
++
++import { DropdownMenu } from "../DropdownMenu";
++
++import { locales } from "./Navbar.i18n";
++
++export const Navbar = () => {
++  const { t } = useTranslation({ messages: locales });
++  const navigate = useNavigate();
++
++  return (
++    <div className="flex items-center justify-end w-full p-4">
++      <DropdownMenu icon={<Bolt size={18} />}>
++        <DropdownMenu.Label>{t("userSettings.label")}</DropdownMenu.Label>
++        <DropdownMenu.Item onClick={() => navigate(ROUTES.USER_CONFIGURATIONS)}>
++          {t("userSettings.settings")}
++        </DropdownMenu.Item>
++      </DropdownMenu>
++    </div>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/Navbar/index.ts b/src/modules/shared/design-system/components/Navbar/index.ts
+new file mode 100644
+index 0000000..2134800
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Navbar/index.ts
+@@ -0,0 +1 @@
++export * from "./Navbar";
+diff --git a/src/modules/shared/design-system/components/PasswordRules/PasswordRules.test.tsx b/src/modules/shared/design-system/components/PasswordRules/PasswordRules.test.tsx
+index 2696df9..e0bb23d 100644
+--- a/src/modules/shared/design-system/components/PasswordRules/PasswordRules.test.tsx
++++ b/src/modules/shared/design-system/components/PasswordRules/PasswordRules.test.tsx
+@@ -2,9 +2,9 @@ import { describe, it } from "vitest";
+ 
+ import { render, screen } from "@/modules/shared/tests";
+ import { TranslationProvider } from "@/modules/shared/translation/context";
+-import { locales } from "@/modules/user/User.i18n";
+ 
+ import { PasswordRules } from "./PasswordRules";
++import { locales } from "./PasswordRules.i18n";
+ 
+ describe("modules/user/create-user/components/PasswordRules", () => {
+   it.each([
+diff --git a/src/modules/shared/design-system/components/SideMenu/SideMenu.i18n.ts b/src/modules/shared/design-system/components/SideMenu/SideMenu.i18n.ts
+new file mode 100644
+index 0000000..3e884e4
+--- /dev/null
++++ b/src/modules/shared/design-system/components/SideMenu/SideMenu.i18n.ts
+@@ -0,0 +1,9 @@
++import { MessagesTypes } from "@/modules/shared/translation/models";
++
++export const locales: MessagesTypes = {
++  "pt-BR": {
++    ollo: "OLLO.li",
++    myLinks: "Meus links",
++  },
++  "en-US": {},
++};
+diff --git a/src/modules/shared/design-system/components/SideMenu/SideMenu.test.tsx b/src/modules/shared/design-system/components/SideMenu/SideMenu.test.tsx
+new file mode 100644
+index 0000000..c76b406
+--- /dev/null
++++ b/src/modules/shared/design-system/components/SideMenu/SideMenu.test.tsx
+@@ -0,0 +1,35 @@
++import { afterAll, describe, expect, it, vi } from "vitest";
++
++import { ROUTES } from "@/modules/shared/application/Routes";
++import { mockNavigate, render, screen, waitFor } from "@/modules/shared/tests";
++import { TranslationProvider } from "@/modules/shared/translation/context";
++import userEvent from "@testing-library/user-event";
++
++import { SideMenu } from "./SideMenu";
++import { locales } from "./SideMenu.i18n";
++
++describe("shared/design-system/SidMenu", () => {
++  afterAll(() => {
++    vi.clearAllMocks();
++  });
++
++  it.each([{ label: "Meus links", redirectTo: ROUTES.HOME }])(
++    "Should be able to render options with success '%label' and redirect to $link",
++    async ({ label, redirectTo }) => {
++      render(
++        <TranslationProvider messages={locales}>
++          <SideMenu />
++        </TranslationProvider>,
++      );
++      screen.getByText(/ollo.li/i);
++
++      const link = screen.getByText(label) as HTMLAnchorElement;
++
++      userEvent.click(link);
++
++      await waitFor(() => {
++        expect(mockNavigate).toHaveBeenCalledWith(redirectTo);
++      });
++    },
++  );
++});
+diff --git a/src/modules/shared/design-system/components/SideMenu/SideMenu.tsx b/src/modules/shared/design-system/components/SideMenu/SideMenu.tsx
+new file mode 100644
+index 0000000..f1d40c4
+--- /dev/null
++++ b/src/modules/shared/design-system/components/SideMenu/SideMenu.tsx
+@@ -0,0 +1,35 @@
++import { useNavigate } from "react-router-dom";
++
++import { ROUTES } from "@/modules/shared/application/Routes";
++import { TableIcon } from "@/modules/shared/design-system";
++import { useTranslation } from "@/modules/shared/translation/hooks";
++
++import { Heading } from "../Heading";
++import { Link } from "../Link";
++
++import { locales } from "./SideMenu.i18n";
++
++export const SideMenu = () => {
++  const navigate = useNavigate();
++  const { t } = useTranslation({ messages: locales });
++
++  return (
++    <div className="flex flex-col justify-center items-center gap-4">
++      <div
++        className="mb-5 cursor-pointer"
++        onClick={() => navigate(ROUTES.HOME)}
++      >
++        <Heading as="h1" gradient="primary">
++          <span>{t("ollo")}</span>
++        </Heading>
++      </div>
++
++      <div className="flex justify-start items-center gap-1 w-full">
++        <TableIcon size={18} className="text-primary-500" />
++        <Link size="l" onClick={() => navigate(ROUTES.HOME)}>
++          {t("myLinks")}
++        </Link>
++      </div>
++    </div>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/SideMenu/index.ts b/src/modules/shared/design-system/components/SideMenu/index.ts
+new file mode 100644
+index 0000000..582fd5b
+--- /dev/null
++++ b/src/modules/shared/design-system/components/SideMenu/index.ts
+@@ -0,0 +1 @@
++export * from "./SideMenu";
+diff --git a/src/modules/shared/design-system/components/Skeleton/Skeleton.tsx b/src/modules/shared/design-system/components/Skeleton/Skeleton.tsx
+new file mode 100644
+index 0000000..70bc2ba
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Skeleton/Skeleton.tsx
+@@ -0,0 +1,25 @@
++import { ComponentProps } from "react";
++import { tv, VariantProps } from "tailwind-variants";
++
++const skeleton = tv({
++  base: "h-4 w-full bg-slate-400",
++  variants: {
++    rounded: {
++      true: "rounded-full h-10 w-10",
++      false: "rounded",
++    },
++  },
++  defaultVariants: {
++    rounded: false,
++  },
++});
++
++type SkeletonProps = ComponentProps<"div"> & VariantProps<typeof skeleton>;
++
++export const Skeleton = (props: SkeletonProps) => {
++  return (
++    <div data-testid="skeleton" className="animate-pulse flex space-x-4">
++      <div className={skeleton(props)} {...props} />
++    </div>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/Skeleton/index.ts b/src/modules/shared/design-system/components/Skeleton/index.ts
+new file mode 100644
+index 0000000..55879b8
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Skeleton/index.ts
+@@ -0,0 +1 @@
++export * from "./Skeleton";
+diff --git a/src/modules/shared/design-system/components/Tooltip/Tooltip.tsx b/src/modules/shared/design-system/components/Tooltip/Tooltip.tsx
+new file mode 100644
+index 0000000..8262bad
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Tooltip/Tooltip.tsx
+@@ -0,0 +1,21 @@
++import { ReactNode } from "react";
++
++import { Provider, Root } from "@radix-ui/react-tooltip";
++
++import { TooltipContent } from "./components/TooltipContent";
++import { TooltipTrigger } from "./components/TooltipTrigger";
++
++type TooltipProps = {
++  children: ReactNode;
++};
++
++export const Tooltip = ({ children }: TooltipProps) => {
++  return (
++    <Provider>
++      <Root>{children}</Root>
++    </Provider>
++  );
++};
++
++Tooltip.Trigger = TooltipTrigger;
++Tooltip.Content = TooltipContent;
+diff --git a/src/modules/shared/design-system/components/Tooltip/components/TooltipContent.tsx b/src/modules/shared/design-system/components/Tooltip/components/TooltipContent.tsx
+new file mode 100644
+index 0000000..62c4166
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Tooltip/components/TooltipContent.tsx
+@@ -0,0 +1,21 @@
++import { ReactNode } from "react";
++
++import { Arrow, Content, Portal } from "@radix-ui/react-tooltip";
++
++type TooltipContentProps = {
++  children: ReactNode;
++};
++
++export const TooltipContent = ({ children }: TooltipContentProps) => {
++  return (
++    <Portal>
++      <Content
++        className="data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade data-[state=delayed-open]:data-[side=right]:animate-slideLeftAndFade data-[state=delayed-open]:data-[side=left]:animate-slideRightAndFade data-[state=delayed-open]:data-[side=bottom]:animate-slideUpAndFade text-violet11 select-none rounded-[4px] bg-gray-800 text-white px-[15px] py-[10px] text-[15px] leading-none shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] will-change-[transform,opacity]"
++        sideOffset={5}
++      >
++        {children}
++        <Arrow className="fill-gray-800" />
++      </Content>
++    </Portal>
++  );
++};
+diff --git a/src/modules/shared/design-system/components/Tooltip/components/TooltipTrigger.tsx b/src/modules/shared/design-system/components/Tooltip/components/TooltipTrigger.tsx
+new file mode 100644
+index 0000000..88567e3
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Tooltip/components/TooltipTrigger.tsx
+@@ -0,0 +1,11 @@
++import { ReactNode } from "react";
++
++import { Trigger } from "@radix-ui/react-tooltip";
++
++type TooltipTriggerProps = {
++  children: ReactNode;
++};
++
++export const TooltipTrigger = ({ children }: TooltipTriggerProps) => {
++  return <Trigger asChild>{children}</Trigger>;
++};
+diff --git a/src/modules/shared/design-system/components/Tooltip/index.ts b/src/modules/shared/design-system/components/Tooltip/index.ts
+new file mode 100644
+index 0000000..46bb2f2
+--- /dev/null
++++ b/src/modules/shared/design-system/components/Tooltip/index.ts
+@@ -0,0 +1 @@
++export * from "./Tooltip";
+diff --git a/src/modules/shared/design-system/components/index.ts b/src/modules/shared/design-system/components/index.ts
+index 2a1b6ce..a4c3a39 100644
+--- a/src/modules/shared/design-system/components/index.ts
++++ b/src/modules/shared/design-system/components/index.ts
+@@ -2,12 +2,19 @@ export * from "./Alert";
+ export * from "./Button";
+ export * from "./Card";
+ export * from "./Divider";
++export * from "./EmptyState";
+ export * from "./Heading";
+ export * from "./Icons";
+ export * from "./Layout";
++export * from "./Link";
+ export * from "./Loading";
++export * from "./Navbar";
+ export * from "./PasswordRules";
+ export * from "./RenderCondition";
++export * from "./SideMenu";
++export * from "./Skeleton";
++export * from "./Table";
+ export * from "./Text";
+ export * from "./TextField";
+ export * from "./Toast";
++export * from "./Tooltip";
+diff --git a/src/modules/shared/design-system/global.css b/src/modules/shared/design-system/global.css
+index a67da01..0018c9a 100644
+--- a/src/modules/shared/design-system/global.css
++++ b/src/modules/shared/design-system/global.css
+@@ -4,7 +4,7 @@
+ 
+ :root {
+   --foreground-rgb: 0, 0, 0;
+-  --background: 238 238 238;
++  --background: 221 221 221;
+ }
+ 
+ @layer base {
+diff --git a/src/modules/shared/providers/application/ErrorBoundary.tsx b/src/modules/shared/providers/application/ErrorBoundary.tsx
+index d3ddd5f..9cc4514 100644
+--- a/src/modules/shared/providers/application/ErrorBoundary.tsx
++++ b/src/modules/shared/providers/application/ErrorBoundary.tsx
+@@ -1,5 +1,8 @@
+ import { Component, ErrorInfo, ReactNode } from "react";
+ 
++import { Button, Heading, Text } from "../../design-system";
++
++import dogHurted from "/dog-hurted.svg";
+ interface Props {
+   children?: ReactNode;
+ }
+@@ -24,7 +27,25 @@ class ErrorBoundary extends Component<Props, State> {
+ 
+   public render() {
+     if (this.state.hasError) {
+-      return <h1>Sorry.. there was an error</h1>;
++      return (
++        <div className="flex flex-col justify-center items-center h-screen gap-6">
++          <div className="w-48 h-48">
++            <img src={dogHurted} alt="error image" />
++          </div>
++
++          <Heading as="h1" gradient="primary">
++            Ocorreu um erro inesperado.
++          </Heading>
++
++          <Text as="p" className="text-gray-600" size="xl">
++            Tente novamente mais tarde, ou tente recarregar a página
++          </Text>
++
++          <Button variant="secondary" onClick={() => window.location.reload()}>
++            Recarregar página
++          </Button>
++        </div>
++      );
+     }
+ 
+     return this.props.children;
